@@ -9,18 +9,16 @@ public class PlayerScript : MonoBehaviour
     //counter 3 max if spawned one +1 else if one gone then -1
 
     int counter = 0;
-    bool canSpawn = true;
+    public bool canSpawn = true;
     
     //MY BALL;
     [SerializeField]GameObject ball;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        canSpawn = true;
         // 1. get position 
         // 2. spawn.
-        
-        
-    
     }
 
     // Update is called once per frame
@@ -38,10 +36,12 @@ public class PlayerScript : MonoBehaviour
         // set my spawn point variable by converting mousePos from screen space into world space
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canSpawn == true)
         {
             // Instaniate.
             Instantiate(ball, point, Quaternion.identity);
+            counter += 1;
+            canSpawn = false;
         }
     }
 }

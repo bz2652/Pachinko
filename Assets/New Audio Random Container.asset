@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-4830712512516957119
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: a53e7760-3022-487c-b89a-6b1c543f6c6f_{-4830712512516957119}
+  m_AudioClip: {fileID: 8300000, guid: 43a4c2c1971c35641bca5144f6dadc6f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3876229525697718615
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: e8c4f701-fb20-4498-ab8f-df563b7ae827_{-3876229525697718615}
+  m_AudioClip: {fileID: 8300000, guid: 98328812d6c9af44185cb5e416f7425e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1203599991003209615
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: a36b7077-8460-46b7-9d9f-bf45ae911be8_{1203599991003209615}
+  m_AudioClip: {fileID: 8300000, guid: baef764569f437740a9de930c5dd48ad, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Audio Random Container
+  m_Volume: 0
+  m_Pitch: 357
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 1203599991003209615}
+  - {fileID: -4830712512516957119}
+  - {fileID: -3876229525697718615}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

@@ -10,6 +10,7 @@ TagManager:
   - Row4
   - Row5
   - Row6
+  - Exit
   layers:
   - Default
   - TransparentFX

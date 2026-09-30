@@ -3,11 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-
     Vector2 mousePos;
     Vector3 point;
     //counter 3 max if spawned one +1 else if one gone then -1
-
+    
     int counter = 0;
     public bool canSpawn = true;
     
@@ -24,7 +23,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counter >= 3)
+        if (counter >= 5)
         {
             return; // RETURN MEANS STOP THIS FUNCTION6
         }
@@ -36,10 +35,12 @@ public class PlayerScript : MonoBehaviour
         // set my spawn point variable by converting mousePos from screen space into world space
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canSpawn == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canSpawn == true && mousePos.x > 37 && mousePos.x < 635 && mousePos.y > 365 && mousePos.y < 446)
         {
             // Instaniate.
-            Instantiate(ball, point, Quaternion.identity);
+            //Debug.Log(mousePos);
+            GameObject newBall = Instantiate(ball, point, Quaternion.identity);
+            newBall.GetComponent<BallScript>().player = this;
             counter += 1;
             canSpawn = false;
         }

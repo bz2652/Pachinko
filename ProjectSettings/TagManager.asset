@@ -11,6 +11,10 @@ TagManager:
   - Row5
   - Row6
   - Exit
+  - Peg
+  - Bug
+  - Skull
+  - Boost
   layers:
   - Default
   - TransparentFX

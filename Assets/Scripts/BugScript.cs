@@ -1,13 +1,12 @@
-using System;
 using UnityEngine;
 
-public class SoundPegScript : MonoBehaviour
+public class BugScript : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioSource Eating;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Eating = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -16,12 +15,11 @@ public class SoundPegScript : MonoBehaviour
         
     }
     
-    void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            audioSource.Play();
+            Eating.Play();
         }
     }
-    
 }
